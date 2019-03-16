@@ -25,8 +25,10 @@ public class Player : MonoBehaviour {
 
     //Action Sensor
     public GameObject sensor;
-	// Use this for initialization
-	void Start ()
+    public GameObject projectile;
+
+    // Use this for initialization
+    void Start ()
     {
 
         rb = GetComponent<Rigidbody2D>();
@@ -129,6 +131,13 @@ public class Player : MonoBehaviour {
             //transform.position = Vector3.MoveTowards(transform.position, newPos, playerSpeed * Time.deltaTime);
         }
 
+        if (Input.GetKeyDown(KeyCode.Space) == true)
+        {
+            Debug.Log("space presssed");
+            Instantiate(projectile, transform.position, Quaternion.identity);
+
+
+        }
     }
 
 

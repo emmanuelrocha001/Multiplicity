@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
   Transform currentNode;
   public float speed;
   public GameObject effect;
+
   public GameObject[] path;
   int currentNodeId;
 
@@ -67,7 +68,7 @@ public class Enemy : MonoBehaviour
 
     if (other.CompareTag("Tile"))
     {
-      Debug.Log("Touching Tile");
+      //Debug.Log("Touching Tile");
       //transform.position = new Vector3(transform.position.x, other.GetComponent<Transform>().position.y);
     }
 

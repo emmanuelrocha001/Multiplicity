@@ -12,6 +12,9 @@ TagManager:
   - path_node
   - end_node
   - node
+  - health_bar
+  - Ground
+  - stats
   layers:
   - Default
   - TransparentFX
